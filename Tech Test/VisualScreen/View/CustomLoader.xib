@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomLoader" customModule="Tech_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oZ2-oc-9Sh"/>
+                <outlet property="loaderIndicator" destination="qRw-aa-8Jv" id="ZTT-IV-yB1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="569"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX1-Tp-Sro">
+                    <rect key="frame" x="139.5" y="217" width="135" height="135"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qRw-aa-8Jv">
+                            <rect key="frame" x="45" y="45" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="XEr-72-oia"/>
+                                <constraint firstAttribute="width" secondItem="qRw-aa-8Jv" secondAttribute="height" multiplier="1:1" id="wME-UZ-Jwk"/>
+                            </constraints>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qRw-aa-8Jv" secondAttribute="trailing" constant="45" id="CLB-ZK-lge"/>
+                        <constraint firstItem="qRw-aa-8Jv" firstAttribute="leading" secondItem="tX1-Tp-Sro" secondAttribute="leading" constant="45" id="FXV-N3-EVJ"/>
+                        <constraint firstAttribute="bottom" secondItem="qRw-aa-8Jv" secondAttribute="bottom" constant="45" id="KQv-8h-hyg"/>
+                        <constraint firstItem="qRw-aa-8Jv" firstAttribute="top" secondItem="tX1-Tp-Sro" secondAttribute="top" constant="45" id="mGT-dx-OIf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="0.4007297092013889" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tX1-Tp-Sro" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QKc-QC-WTc"/>
+                <constraint firstItem="tX1-Tp-Sro" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cFE-24-rME"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="241.40625"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="ArticleCommentDetails" customModule="Tech_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{AuthorName}}" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-oP-IuA">
+                        <rect key="frame" x="16" y="8" width="288" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{AuthorComments}}" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc9-50-VrS">
+                        <rect key="frame" x="16" y="38" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7r-fM-g1Y" userLabel="Hit Box Author Label">
+                        <rect key="frame" x="16" y="8" width="288" height="30"/>
+                        <connections>
+                            <action selector="didTouchUsername:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="g37-eb-qO7"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a08-7w-mnt">
+                        <rect key="frame" x="16" y="133" width="288" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kol-to-fIm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k7r-fM-g1Y" firstAttribute="centerX" secondItem="yF6-oP-IuA" secondAttribute="centerX" id="5Dq-5n-CUW"/>
+                    <constraint firstItem="yF6-oP-IuA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6Hf-Xc-EaZ"/>
+                    <constraint firstItem="yF6-oP-IuA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CwY-TO-X9W"/>
+                    <constraint firstItem="Vc9-50-VrS" firstAttribute="top" secondItem="yF6-oP-IuA" secondAttribute="bottom" id="ELH-Ll-Ree"/>
+                    <constraint firstAttribute="trailing" secondItem="a08-7w-mnt" secondAttribute="trailing" constant="16" id="IeU-Lt-CqH"/>
+                    <constraint firstAttribute="trailing" secondItem="yF6-oP-IuA" secondAttribute="trailing" constant="16" id="IwI-ei-oF3"/>
+                    <constraint firstAttribute="bottom" secondItem="a08-7w-mnt" secondAttribute="bottom" id="SkQ-qH-Pyo"/>
+                    <constraint firstItem="k7r-fM-g1Y" firstAttribute="centerY" secondItem="yF6-oP-IuA" secondAttribute="centerY" id="Tmm-B3-cnI"/>
+                    <constraint firstItem="a08-7w-mnt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UL0-5E-nmj"/>
+                    <constraint firstItem="k7r-fM-g1Y" firstAttribute="height" secondItem="yF6-oP-IuA" secondAttribute="height" id="XD7-ro-Pjm"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vc9-50-VrS" secondAttribute="bottom" constant="16" id="YE1-bh-D7H"/>
+                    <constraint firstItem="k7r-fM-g1Y" firstAttribute="width" secondItem="yF6-oP-IuA" secondAttribute="width" id="njf-ft-CTT"/>
+                    <constraint firstItem="Vc9-50-VrS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vDR-QC-19B"/>
+                    <constraint firstAttribute="trailing" secondItem="Vc9-50-VrS" secondAttribute="trailing" constant="16" id="vxM-Um-BVJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="yF6-oP-IuA" id="8J1-et-Gdh"/>
+                <outlet property="commentLabel" destination="Vc9-50-VrS" id="uiw-e4-efA"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
